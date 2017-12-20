@@ -1,6 +1,6 @@
 <template>
     <header class="header">
-        <div id="logo"> {{logo}} </div>
+        <div id="logo"> logo </div>
         <ul class="nav">
             <li v-for="nav in navs"> {{nav.li}} </li>
         </ul>
@@ -18,6 +18,8 @@ export default {
             ]
         }
     },
-    props: ['logo']
+    mounted(){
+    	$("#logo").html("aaa");
+    }
 }
 </script>
